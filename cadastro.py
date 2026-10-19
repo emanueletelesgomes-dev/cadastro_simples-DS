@@ -7,4 +7,16 @@ while True:
     print("2 - fazer login")
     print("3 - sair")
 
-    opcao = input(" escolha uma opcao:") 
+    opcao =int( input(" escolha uma opcao:")) 
+ #se   
+    #se o usario digitar o valor 1, vai ser exebido
+    # a  acao abaixo:
+    print(""=================="")
+    print("=====tela de cadastro=====")
+    print("========================")
+elif(opcao == 2):
+    print(=="=========tela de cadastro==========")
+    print("==================")
+     elfi:
+    print("voce esta saindo do cadastro,ate mais!")
+    break
