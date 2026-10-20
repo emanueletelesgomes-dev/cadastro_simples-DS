@@ -1,4 +1,15 @@
+#variaveis para cadastro
+nome = ""
+idade = ""
+usuario = ""
+senha = ""
+
+login_usuario = ""
+login_senha = "" 
+
+#apenas a tela de visualizacao
 while True:
+
     print("==========")
     print("sistema cadastro")
     print("=================")
@@ -14,10 +25,27 @@ while True:
     if(opcao == "1"):
         print("======tela de cadastro=====")
         print("=================")
-    elif("opcao == "2"):
+        nome = input("digite o seu nome: ")
+        idade = input("digite sua idade: ")
+        usuario = input("digite seu usuario: ")
+        senha = input ("digite sua senha: ")
+        print("\n cadastro realizado!\n")
+     #se digitar 2, abre a tela de login
+    elif(opcao == "2"):
         print("=========")
         print("===tela de login===")
         print("===========")
+        login_usuario = input("digite o usuario cadastro: ")
+        login_senha = input("digite a senha")
+        
+     #processamento de usuario e senha
+       if login_usuario == usuario and login_senha == senha:
+         print("\n longin realizado com sucesso!\n")
+         print("bem vindo,",nome)
+#se nao estiver correto entra no caso abaixo
+       else:
+         print("usuario ou senha incorretos")
+
 #se digitar 3, sai da execucao
     elif(opcao == "3"):
         print("voce esta saindo do cadastro, até mais!")
